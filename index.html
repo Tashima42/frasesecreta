@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frase secreta</title>
     <link href="style/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>GERADOR DE <span>FRASE SECRETA</span></h1>
+            <a href="#">O que é uma frase secreta?</a>
         </header>
         <main>
-            <p>Todo o processamento é feito localmente, nada jamais é compartilhado externamente</p>
-            <input id="frase-secreta" type="text" value="Carregando...">
-            <select>
-                <option value="Teste">Teste</option>
-            </select>
+            <div class="input-frase">
+                <p>Todo o processamento é feito localmente, nada jamais é compartilhado externamente</p>
+                <input id="frase-secreta" type="text" value="Carregando...">
+            </div>
+            <div class="botoes">
+                <button>GERAR FRASE SECRETA</button>
+                <select>
+                    <option value="4">4 palavras</option>
+                    <option value="8">8 palavras</option>
+                    <option value="12">12 palavras</option>
+                </select>
+                <button>Copiar</button>
+            </div>
+            <div class="disclaimers">
+                <p>Todo o processamento é feito localmente no seu navegador. Nenhum dado jamais é compartilhado
+                    externamente.</p>
+                <p>Esse é apenas um gerador de frases secretas, não me responsabilizo por qualquer dano causado caso
+                    você
+                    seja hackeado.</p>
+            </div>
         </main>
+        <footer>
+            <p>Criado por <a href="#">Pedro Tashima</a>, inspirado por <a href="#">Mike Hearn</a></p>
+            <div class="social"></div>
+        </footer>
     </div>
 </body>
+
 </html>
