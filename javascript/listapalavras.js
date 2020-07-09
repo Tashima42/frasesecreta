@@ -1,4 +1,4 @@
-var listaPalavras = [
+var listapalavras = [
     'abacateiro',
     'abaco',
     'abadia',
