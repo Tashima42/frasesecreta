@@ -90,8 +90,13 @@ button:active {
 
 @media(max-width: 768px) {
 
+    body {
+        height: 80vh;
+    }
+
     .header-text {
         font-size: 4rem;
+        margin-top: 20vh;
     }
 }
 
