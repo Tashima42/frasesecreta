@@ -4,50 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frase secreta</title>
+    <title>Passphrase generator
+    </title>
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>GERADOR DE FRASES SECRETAS</h1>
-            <a href="#">O que é uma frase secreta?</a>
-        </header>
-        <main>
-            <div class="input-frase">
-                <p>Ao clicar em gerar frase secreta, ela é automaticamente copiada para a área de transferência</p>
-                <input id="frase-secreta" type="text" value="Clique em gerar" onmouseover="this.select()">
-            </div>
-            <div class="botoes">
-                <button id="botao-gerar" class="botao-gerar">GERAR <span>FRASE SECRETA</span></button>
-                <select id="numero-de-palavras">
-                    <option value="4">4 palavras</option>
-                    <option value="8">8 palavras</option>
-                    <option value="12">12 palavras</option>
-                </select>
-                <button id="botao-copiar">Copiar</button>
-            </div>
-            <div class="disclaimers">
-                <p>Todo o processamento é feito localmente no seu navegador. Nenhuma informação jamais é compartilhada
-                    externamente.</p>
-                <p>Esse é apenas um gerador de frases secretas, não me responsabilizo por qualquer dano causado caso
-                    você
-                    seja hackeado.</p>
-            </div>
-        </main>
-        <!-- <footer>
-            <p>Criado por <a href="#">Pedro Tashima</a>, inspirado por <a href="#">Mike Hearn</a></p>
-            <div class="social">
-                <a href="https://github.com/tashima42"><img src="img/github.png" alt="github"></a>
-                <a href="https://twitter.com/tashima42"><img src="img/twitter.png" alt="twitter"></a>
-                <a href="https://instagram.com/tashima42"><img src="img/instagram.png" alt="instagram"></a>
-                <a href="https://home.tashima.tech"><img src="img/website.png" alt="https://home.tashima.tech"></a>
-            </div>
-        </footer> -->
+    <header class="header"><h1 class="header-text">PASSPHRASE GENERATOR</h1></header>
+    <main class="main">
+        <input type="text" class="passphrase">
+        <div class="selectors">
+ <!--            <select class="words-select outline">
+                <option class="words-option" value="4">4 WORDS!</option>
+                <option class="words-option" value="8">8 WORDS!</option>
+                <option class="words-option" value="12">12 WORDS!</option>
+            </select> -->
+            <button class="generate outline">GENERATE!</button>
+            <button class="copy outline">COPY!</button>
+        </div>
+    </main>
 
-        <script src="javascript/app.js"></script>
+    <script src="javascript/app.js"></script>
     </div>
 </body>
 
